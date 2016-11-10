@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include text($text-size * 1.8, 1.6, $color: $text-color);
+	margin: 0;
+	font-family: $font-stack;
+}
+
+p {
+	@include text($text-size * 1.8, $weight: 300, $color: $text-color);
+	margin-bottom: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: $text-color;
+	margin-top: 0;
+	@extend %centered;
+}
+
+h3 {
+	@extend h2;
+	@include text($text-size * 1.6, $weight: normal);
+	margin-bottom: 0;
+	text-transform: none;
+
+	@media #{$brk-narrow} {
+		@include text($text-size * 1.8);
+	}
+
+	@media #{$brk-wide} {
+		@include text($text-size * 1.9);
+		margin-bottom: 0;
+	}
+}
+
+a {
+	&:link {
+		color: $link-color;
+		text-decoration: none;
+	}
+	&:visited {
+		color: $link-color;
+	}
+	&:hover {
+		color: $hover-color;
+	}
+	&:active {
+		color: $active-color;
+	}
+}
