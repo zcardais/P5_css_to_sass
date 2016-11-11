@@ -16,7 +16,7 @@
 	}
 	// TODO: Add the <p> media query to _base.scss within the <p> element
 	p {
-		font-size: $text-size * 1.8;
+		font-size: $text-size-med;
 		color: $text-color;
 		font-weight: 300;
 		margin: 0 auto 1.2em auto;
@@ -94,13 +94,13 @@
 	}
 	// TODO: Add the <p> media query to _base.scss within the <p> element
 	p {
-		font-size: $text-size * 1.9;
+		font-size: $text-size-lg;
 		color: $text-color;
 		font-weight: 300;
 		margin: .5em 0 1.5em 0;
 		padding: 0 6px;
 	}
-	.container {	
+	.container {
 		width: 90%;
 		margin: 50px auto 30px;
 	}

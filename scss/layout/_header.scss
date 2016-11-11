@@ -39,13 +39,13 @@ ul {
 		background: #fff;
 	}
 	a {
-		font-size: $text-size * 1.8;
+		font-size: $text-size-med;
 		color: $text-color;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
 	& a:hover {
-		color: #7a7a7a;
+		color: $nav-hover-color;
 	}
 }
 
