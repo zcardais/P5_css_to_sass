@@ -1,14 +1,13 @@
 /* =================================
   Media Queries
 ==================================== */
-
 @media (min-width: 769px) {
 	.main-header {
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 50px;
-		padding-top: .5em;
-		padding-bottom:.25em;
+		padding-top: 0.5em;
+		padding-bottom: 0.25em;
 
 		&.main-nav {
 			display: flex;
@@ -19,74 +18,88 @@
 		font-size: $text-size-med;
 		color: $text-color;
 		font-weight: 300;
-		margin: 0 auto 1.2em auto;
+		margin: 0 auto 1.2em;
 		padding: 0 50px;
 	}
+
 	.container {
 		width: 100%;
 		max-width: 1150px;
 		margin: 50px auto;
 	}
+
 	.main-nav li {
 		margin-left: 12px;
 	}
+
 	.main-nav,
 	.main-nav li {
 		display: inline-block;
-		background:none;
+		background: none;
 		text-align: center;
 	}
+
 	.main-heading {
 		text-align: center;
 	}
+
 	.primary {
 		float: right;
 	}
+
 	.secondary {
 		float: left;
 		text-align: left;
 	}
+
 	.col {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
 	.col-md-6 {
 		width: 50%;
 		margin-right: -4px;
 		vertical-align: top;
 		margin-bottom: 15px;
 	}
+
 	.img {
 		width: 100%;
 	}
+
 	.three {
 		margin-top: 30px;
 		text-align: center;
 		background: #fafafa;
 	}
+
 	.footer-name {
-		float:left;
+		float: left;
 	}
+
 	.footer-nav {
-		float:right;
-		list-style:none;
+		float: right;
+		list-style: none;
 		text-transform: uppercase;
 	}
+
 	.main-footer {
-		padding: 2em 2em;;
+		padding: 2em;
 		background: #fafafa;
 	}
+
 	.lead {
 		padding: 0 5em;
 		margin-bottom: 2em;
 	}
+
 	.clearfix::after {
 		content: "";
 		display: table;
 		clear: both;
 	}
 }
-
 @media (min-width: 1025px) {
 	.main-header {
 		flex-direction: row;
@@ -97,37 +110,46 @@
 		font-size: $text-size-lg;
 		color: $text-color;
 		font-weight: 300;
-		margin: .5em 0 1.5em 0;
+		margin: 0.5em 0 1.5em;
 		padding: 0 6px;
 	}
+
 	.container {
 		width: 90%;
 		margin: 50px auto 30px;
 	}
+
 	.main-nav {
 		float: right;
 	}
+
 	.main-nav li {
-		float:left;
+		float: left;
 	}
+
 	.main-heading {
 		float: left;
 	}
+
 	.col-lg-4 {
 		display: inline-block;
 		width: 33%;
 		text-align: center;
 	}
+
 	.primary {
 		float: right;
 	}
+
 	.secondary {
 		float: left;
 	}
+
 	.lead {
 		padding: 0 18em;
 		margin-bottom: 2em;
 	}
+
 	.clearfix::after {
 		content: "";
 		display: table;

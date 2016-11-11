@@ -1,19 +1,15 @@
 .container {
-	padding-left: 1em;
-	padding-right: 1em;
+	@extend %padding-lt-rt;
 }
-
 /* ---- Page Elements ---- */
-
 .img {
 	width: 100%;
 	margin-top: 5px;
 	margin-bottom: 25px;
 	padding: 10px;
 }
+
+.three,
 .two {
-	text-align: center;
-}
-.three {
-	@extend .two;
+	@extend %centered;
 }
