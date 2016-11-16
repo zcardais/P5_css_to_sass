@@ -8,6 +8,7 @@ $nav-color: #4a4a4a;
 $nav-hover-color: #7a7a7a;
 $hover-nav: #7a7a7a;
 $text-size: 10px;
+$text-size-body: $text-size * 1.6;
 $text-size-med: $text-size * 1.8;
 $text-size-lg: $text-size * 1.9;
 $font-stack: 'Varela Round', sans-serif;
@@ -16,5 +17,5 @@ $bg-footer: #fafafa;
 
 // Media Queries
 
-$brk-narrow     : '(min-width: 768px)';
-$brk-wide       : '(min-width: 1024px)';
+$brk-narrow     : '(min-width: 769px)';
+$brk-wide       : '(min-width: 1025px)';

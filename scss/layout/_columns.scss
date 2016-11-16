@@ -3,6 +3,10 @@
 	@extend %padding-lt-rt;
 }
 
+.container .two [class*="col-"] {
+	@extend %padding-lt-rt;
+}
+
 .col-sm-12 {
 	width: 100%;
 	margin-bottom: 50px;

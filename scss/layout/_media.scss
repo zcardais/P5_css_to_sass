@@ -15,11 +15,11 @@
 	}
 	// TODO: Add the <p> media query to _base.scss within the <p> element
 	p {
-		font-size: $text-size-med;
+		font-size: $text-size-body;
 		color: $text-color;
 		font-weight: 300;
-		margin: 0 auto 1.2em;
-		padding: 0 50px;
+		margin: 0 auto;
+		padding-left: 4%;
 	}
 
 	.container {
@@ -50,6 +50,7 @@
 	.secondary {
 		float: left;
 		text-align: left;
+		padding-left: 0 !important;
 	}
 
 	.col {
@@ -110,8 +111,8 @@
 		font-size: $text-size-lg;
 		color: $text-color;
 		font-weight: 300;
-		margin: 0.5em 0 1.5em;
-		padding: 0 6px;
+		margin: 0 0 1.5em;
+		padding: 0 6px 0 0;
 	}
 
 	.container {

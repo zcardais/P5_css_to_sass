@@ -9,14 +9,24 @@
 	],
 "creatorBuild": "25444",
 "files": {
-	"\/css\/application.css": {
+	"\/css\/application-min.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/css\/application-min.css",
+		"oAP": "\/css\/application-min-min.css",
 		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/application.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/application-min.css",
+		"oF": 1,
 		"oS": 0
 		},
 	"\/css\/application.css.map": {
@@ -211,8 +221,8 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/scss\/application.css",
-		"oF": 0,
+		"oAP": "\/css\/application.css",
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
