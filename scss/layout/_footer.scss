@@ -1,5 +1,9 @@
 .main-footer {
 	background: $bg-footer;
+	@include tablet {
+		padding: 2em;
+		background: #fafafa;
+	}
 }
 
 .footer-nav {
@@ -8,6 +12,17 @@
 	text-transform: uppercase;
 	margin-top: 6px;
 	margin-bottom: 6px;
+	@include tablet {
+		float: right;
+		list-style: none;
+		text-transform: uppercase;
+	}
+}
+
+.footer-name {
+	@include tablet {
+		float: left;
+	}
 }
 
 .socket {

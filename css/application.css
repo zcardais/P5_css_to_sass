@@ -15,6 +15,20 @@ p {
   margin-bottom: 1.5em;
   padding-left: 1em;
   padding-right: 1em; }
+  @media (min-width: 769px) {
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      color: #4a4a4a;
+      margin: 0 auto;
+      padding-left: 4%; } }
+  @media (min-width: 1025px) {
+    p {
+      font-size: 19px;
+      font-weight: 300;
+      color: #4a4a4a;
+      margin: 0 0 1.5em;
+      padding: 0 6px 0 0 !important; } }
 
 h2, h3 {
   text-transform: uppercase;
@@ -47,21 +61,72 @@ a:hover {
 a:active {
   color: lightcoral; }
 
+@media (min-width: 769px) {
+  .lead {
+    padding: 0 5em;
+    margin-bottom: 2em; } }
+
+@media (min-width: 1025px) {
+  .lead {
+    padding: 0 18em;
+    margin-bottom: 2em; } }
+
 h2, h3, .three,
 .two {
   text-align: center; }
+
+@media (min-width: 769px) {
+  .container .primary {
+    float: right; } }
+
+@media (min-width: 1025px) {
+  .container .primary {
+    float: right; } }
+
+@media (min-width: 769px) {
+  .container .secondary {
+    float: left;
+    text-align: left;
+    padding-left: 0 !important; } }
+
+@media (min-width: 1025px) {
+  .container .secondary {
+    float: left; } }
+
+@media (min-width: 769px) {
+  .col {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .col-sm-12 {
   width: 100%;
   margin-bottom: 50px; }
 
+@media (min-width: 769px) {
+  .container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 50px auto; } }
+
+@media (min-width: 1025px) {
+  .container {
+    width: 90%;
+    margin: 50px auto 30px; } }
+
 /* ---- Page Elements ---- */
 .img {
   width: 100%;
   margin-bottom: 25px; }
+  @media (min-width: 769px) {
+    .img {
+      width: 100%; } }
 
 .main-footer {
   background: #fafafa; }
+  @media (min-width: 769px) {
+    .main-footer {
+      padding: 2em;
+      background: #fafafa; } }
 
 .footer-nav {
   float: right;
@@ -69,6 +134,15 @@ h2, h3, .three,
   text-transform: uppercase;
   margin-top: 6px;
   margin-bottom: 6px; }
+  @media (min-width: 769px) {
+    .footer-nav {
+      float: right;
+      list-style: none;
+      text-transform: uppercase; } }
+
+@media (min-width: 769px) {
+  .footer-name {
+    float: left; } }
 
 .socket {
   border-top: 1px solid #dddddd;
@@ -82,6 +156,19 @@ h2, h3, .three,
   background: #fafafa;
   margin-bottom: 30px;
   text-align: center; }
+  @media (min-width: 769px) {
+    .main-header {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      padding-top: 0.5em;
+      padding-bottom: 0.25em; }
+      .main-header.main-nav {
+        display: flex; } }
+  @media (min-width: 1025px) {
+    .main-header {
+      flex-direction: row;
+      justify-content: space-between; } }
 
 /* ---- Navigation ---- */
 .main-heading, .main-nav li,
@@ -95,24 +182,33 @@ ul .footer-nav,
 ul .main-nav {
   list-style: none; }
 
-ul .main-nav {
-  padding-left: 0; }
-
 .main-heading, .main-nav li {
   margin-top: 6px;
   margin-bottom: 6px; }
+  @media (min-width: 769px) {
+    .main-heading, .main-nav li {
+      text-align: center; } }
+  @media (min-width: 1025px) {
+    .main-heading, .main-nav li {
+      float: left; } }
 
-.main-nav li {
-  background: #fff; }
-
-.main-nav a {
-  font-size: 18px;
-  color: #4a4a4a;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.main-nav a:hover {
-  color: #7a7a7a; }
+.main-nav {
+  padding-left: 0; }
+  @media (min-width: 1025px) {
+    .main-nav {
+      float: right; } }
+  .main-nav li {
+    background: #fff; }
+    @media (min-width: 1025px) {
+      .main-nav li {
+        float: left; } }
+  .main-nav a {
+    font-size: 18px;
+    color: #4a4a4a;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .main-nav a:hover {
+    color: #7a7a7a; }
 
 .main-heading a, .main-nav li a,
 .main-nav a {
@@ -134,24 +230,6 @@ ul .main-nav {
   Media Queries
 ==================================== */
 @media (min-width: 769px) {
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-    padding-top: 0.5em;
-    padding-bottom: 0.25em; }
-    .main-header.main-nav {
-      display: flex; }
-  p {
-    font-size: 16px;
-    color: #4a4a4a;
-    font-weight: 300;
-    margin: 0 auto;
-    padding-left: 4%; }
-  .container {
-    width: 100%;
-    max-width: 1150px;
-    margin: 50px auto; }
   .main-nav li {
     margin-left: 12px; }
   .main-nav,
@@ -159,75 +237,25 @@ ul .main-nav {
     display: inline-block;
     background: none;
     text-align: center; }
-  .main-heading, .main-nav li {
-    text-align: center; }
-  .primary {
-    float: right; }
-  .secondary {
-    float: left;
-    text-align: left;
-    padding-left: 0 !important; }
-  .col {
-    padding-left: 0;
-    padding-right: 0; }
   .col-md-6 {
     width: 50%;
     margin-right: -4px;
     vertical-align: top;
     margin-bottom: 15px; }
-  .img {
-    width: 100%; }
   .three {
     margin-top: 30px;
     text-align: center;
     background: #fafafa; }
-  .footer-name {
-    float: left; }
-  .footer-nav {
-    float: right;
-    list-style: none;
-    text-transform: uppercase; }
-  .main-footer {
-    padding: 2em;
-    background: #fafafa; }
-  .lead {
-    padding: 0 5em;
-    margin-bottom: 2em; }
   .clearfix::after {
     content: "";
     display: table;
     clear: both; } }
 
 @media (min-width: 1025px) {
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between; }
-  p {
-    font-size: 19px;
-    color: #4a4a4a;
-    font-weight: 300;
-    margin: 0 0 1.5em;
-    padding: 0 6px 0 0; }
-  .container {
-    width: 90%;
-    margin: 50px auto 30px; }
-  .main-nav {
-    float: right; }
-  .main-nav li {
-    float: left; }
-  .main-heading, .main-nav li {
-    float: left; }
   .col-lg-4 {
     display: inline-block;
     width: 33%;
     text-align: center; }
-  .primary {
-    float: right; }
-  .secondary {
-    float: left; }
-  .lead {
-    padding: 0 18em;
-    margin-bottom: 2em; }
   .clearfix::after {
     content: "";
     display: table;
@@ -240,5 +268,5 @@ h2, h3, .three,
 .col, ul .footer-nav {
   display: inline-block; }
 
-.col, .container .two [class*="col-"], .container {
+.container .two [class*="col-"], .col, .container {
   padding: 0 0.5em; }

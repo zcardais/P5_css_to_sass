@@ -4,6 +4,21 @@
 	background: $bg-footer;
 	margin-bottom: 30px;
 	text-align: center;
+	@include tablet {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+		padding-top: 0.5em;
+		padding-bottom: 0.25em;
+
+		&.main-nav {
+			display: flex;
+		}
+	}
+	@include desktop {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 /* ---- Navigation ---- */
 .main-heading,
@@ -13,17 +28,11 @@
 	background: none;
 	padding-left: 0;
 }
-// Use Sass Nesting
 ul {
 	.footer-nav,
 	.main-nav {
 		list-style: none;
 	}
-
-	.main-nav {
-		padding-left: 0;
-	}
-
 	.footer-nav {
 		@extend %inline-block;
 	}
@@ -32,21 +41,32 @@ ul {
 .main-heading {
 	margin-top: 6px;
 	margin-bottom: 6px;
+	@include tablet {
+		text-align: center;
+	}
+	@include desktop {
+		float: left;
+	}
 }
 
 .main-nav {
+	padding-left: 0;
+	@include desktop {
+		float: right;
+	}
 	li {
 		@extend .main-heading;
 		background: #fff;
+		@include desktop {
+			float: left;
+		}
 	}
-
 	a {
 		font-size: $text-size-med;
 		color: $text-color;
 		font-weight: bold;
 		text-transform: uppercase;
 	}
-
 	& a:hover {
 		color: $nav-hover-color;
 	}

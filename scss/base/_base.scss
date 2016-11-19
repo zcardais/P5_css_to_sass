@@ -13,6 +13,18 @@ p {
 	margin-bottom: 1.5em;
 	padding-left: 1em;
 	padding-right: 1em;
+	@include tablet {
+		// styles go here
+		@include text($text-size-body, $weight: 300, $color: $text-color);
+		margin: 0 auto;
+		padding-left: 4%;
+	}
+	@include desktop {
+		// styles go here
+		@include text($text-size-lg, $weight: 300, $color: $text-color);
+		margin: 0 0 1.5em;
+		padding: 0 6px 0 0 !important;
+	}
 }
 
 h2 {
@@ -27,13 +39,11 @@ h3 {
 	@include text($text-size-med, $weight: normal);
 	margin-bottom: 0;
 	text-transform: none;
-
-	@media #{$brk-narrow} {
-		@include text($text-size-med);
+	@include tablet {
+		 @include text($text-size-med);
 	}
-
-	@media #{$brk-wide} {
-		@include text($text-size-lg);
+	@include desktop {
+		 @include text($text-size-lg);
 		margin-bottom: 0;
 	}
 }
@@ -43,13 +53,27 @@ a {
 		color: $link-color;
 		text-decoration: none;
 	}
+
 	&:visited {
 		color: $link-color;
 	}
+
 	&:hover {
 		color: $hover-color;
 	}
+
 	&:active {
 		color: $active-color;
+	}
+}
+
+.lead {
+	@include tablet {
+		padding: 0 5em;
+		margin-bottom: 2em;
+	}
+	@include desktop {
+		padding: 0 18em;
+		margin-bottom: 2em;
 	}
 }

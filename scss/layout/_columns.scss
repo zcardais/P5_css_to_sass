@@ -1,10 +1,35 @@
-.col {
-	@extend %inline-block;
-	@extend %padding-lt-rt;
+.container {
+	.primary {
+		@include tablet {
+			float: right;
+		}
+		@include desktop {
+			float: right;
+		}
+	}
+	.secondary {
+		@include tablet {
+			float: left;
+			text-align: left;
+			padding-left: 0 !important;
+		}
+		@include desktop {
+			float: left;
+		}
+	}
 }
 
 .container .two [class*="col-"] {
 	@extend %padding-lt-rt;
+}
+
+.col {
+	@extend %inline-block;
+	@extend %padding-lt-rt;
+	@include tablet {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .col-sm-12 {

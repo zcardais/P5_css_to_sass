@@ -15,7 +15,8 @@ $font-stack: 'Varela Round', sans-serif;
 $bg-footer: #fafafa;
 
 
+
 // Media Queries
 
-$brk-narrow     : '(min-width: 769px)';
-$brk-wide       : '(min-width: 1025px)';
+$tablet-width        : 769px;
+$desktop-width       : 1025px;
